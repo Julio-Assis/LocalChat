@@ -7,3 +7,7 @@ mainClassName = 'main.java.onlinechat.OnlineChat'
 repositories {
     mavenCentral()
 }
+
+run {
+    standardInput = System.in
+}

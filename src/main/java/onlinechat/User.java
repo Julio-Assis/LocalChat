@@ -9,14 +9,14 @@ import java.util.HashMap;
 public class User {
     private String name;
     private String email;
-    private Integer phone;
+    private String phone;
     private List<User> friends;
     private Map<String, FriendRequest> friendRequests;
     private Map<String, FriendRequest> incomingFriendRequest; 
 
 
 
-    public User(String name, String email, Integer phone) {
+    public User(String name, String email, String phone) {
         this.name = name;
         this.email = email;
         this.phone = phone;
@@ -93,7 +93,7 @@ public class User {
         return email;
     }
 
-    public Integer getPhone() {
+    public String getPhone() {
         return phone;
     }
 }
